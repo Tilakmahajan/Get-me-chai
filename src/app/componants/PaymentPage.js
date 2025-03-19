@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Script from 'next/script'
 import { initiate } from '../../../action/useraction'
 import { useSession } from 'next-auth/react'
+import Image from 'next/image'
 
 const PaymentPage = ({ username }) => {
     const { data : session } = useSession()
@@ -44,9 +45,9 @@ const PaymentPage = ({ username }) => {
         <>
             <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
             <div className='cover relative w-full bg-red-50'>
-                <img className='object-cover w-full h-96' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/452146dcfeb04f38853368f554aadde1/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/16.gif?token-time=1725408000&token-hash=BqzPCp2EWfhAS7ZzpdMhbBkybKIr15gVrTCHUApe1P4%3D" alt="" />
+                <Image className='object-cover w-full h-96' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/452146dcfeb04f38853368f554aadde1/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/16.gif?token-time=1725408000&token-hash=BqzPCp2EWfhAS7ZzpdMhbBkybKIr15gVrTCHUApe1P4%3D" alt="" />
                 <div className='absolute -bottom-16 w-32 right-[35%] md:right-[45%]'>
-                    <img className='rounded-full' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/aa52624d1cef47ba91c357da4a7859cf/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/4.gif?token-time=1725840000&token-hash=RGa6IQTa9kLiovRI6CVQ0EBNvK05jAABRwEslJygCf0%3D" alt="" />
+                    <Image className='rounded-full' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/aa52624d1cef47ba91c357da4a7859cf/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/4.gif?token-time=1725840000&token-hash=RGa6IQTa9kLiovRI6CVQ0EBNvK05jAABRwEslJygCf0%3D" alt="" />
                 </div>
 
             </div>
@@ -69,23 +70,23 @@ const PaymentPage = ({ username }) => {
                         <h2 className='font-bold text-center text-2xl '>Supporters</h2>
                         <ul className='text-lg mt-5'>
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Tilak Donated <span className='font-bold'>$30</span> With Massage  </li>
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Vinay Donated <span className='font-bold'>$30</span> With Massage  </li>
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Sonu Donated <span className='font-bold'>$30</span> With Massage  </li>
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Dilip Donated <span className='font-bold'>$30</span> With Massage  </li>
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Bhushan Donated <span className='font-bold'>$30</span> With Massage  </li>
 
                             <li className='my-2 flex gap-2'>
-                                <img width={33} src="user.png" alt="user png" />
+                                <Image width={33} src="/user.png" alt="user png" />
                                 Manan Donated <span className='font-bold'>$30</span> With Massage  </li>
 
 

@@ -3,6 +3,7 @@ import React from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 import Link from 'next/link'
 import { useState } from "react"
+import Image from 'next/image'
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     return (
         <nav className='bg-gradient-to-r from-sky-500 to-indigo-500 text-black flex justify-between items-center px-4 md:h-12 flex-col md:flex-row'>
             <Link href={"/"} className='font-bold text-3lg flex justify-center items-center gap-2'>Get me Chai
-                <span><img className='pb-2' src="chai.gif" width={30} alt="" /></span>
+                <span><Image className='pb-2' src="/chai.gif" width={30} height={30} alt="" /></span>
             </Link>
 
             <div className="buttons mt-2 relative">
